@@ -1,0 +1,392 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  text-align: none;
+}
+section{
+  height: 100%;
+}
+a{
+  color: none;
+}
+
+li{
+  list-style-type: none;
+}
+h1, h2, h3 a {
+  font font-family: 'Roboto', sans-serif; font-weight: 500; color: none; text -transform: uppercase;
+}
+h3{
+  font-size: 35px; color: white; padding-top: %; margin-bottom: 5px;
+}
+h4, p {
+  font-family: 'Roboto Slab', serif;color: none;
+}
+hr{
+  width: 30px; height: 3px; background: black border:0; margin: 0 auto 48px auto;}
+}
+#logo-wrap{transition: all 300ms; -webkit-transition: all 300ms;}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 25px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fa544b; 
+  border-radius: 25px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b7b7b7; 
+}
+
+/*Header*/
+
+header{
+width: 100%;
+height: 65px;
+position: fixed;
+top: 0;
+left: 0;
+background: black;
+box-shadow: 0 1px 3px rgba(255, 0, 0, 0.5);
+z-index: 6;
+}
+
+#logo-wrap {
+width: 225px;
+float: left;
+margin: 10px 0 0 20px;
+}
+
+#logo-wrap:hover {
+  opacity: 0.5
+}
+
+#logo-bar img{
+  border-radius: 15px;
+  width: 100%
+  height: 100%
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #fa544b;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/*HOME-------------------------------------------------------------------------------*/
+
+.bg {
+  /* The image used */
+  background-image: url("/Users/Minh DOng/Desktop/Minh Si Dong/images/home.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-text {
+  border-radius: 25px;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  font-size: 22px;
+  border: 3px solid  #ffe9ec;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+  z-index: 2;
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+}
+
+mark.red {
+    color: #fa544b;
+    background: none;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+
+.line-2{
+    position: center;
+    top: 50%;
+    width: 30em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(60) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 12em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
+
+
+
+
+/*FOOTER-------------------------------------------------------------------------------*/
+
+#footer {
+  position: relative;
+  left: 0;
+  bottom: 10px;
+  padding-top:10px;
+  width: 100%;
+  height: 35%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.socialbtns, .socialbtns ul, .socialbtns li {
+	margin: 0;
+	padding: 5px;
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns .fa {
+    color: #b7b7b7;
+	background-color: #fa544b;
+	width: 70px;
+    height: 38px;
+    padding-top: 12px;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-o-border-radius: 20px;
+  transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+  	transform: rotate(-360deg);
+	-moz-transform: rotate(-360deg);
+	-webkit-transform: rotate(-360deg);
+	-o-transform: rotate(-360deg);
+}
+
+
+.socialbtns .fa:hover {
+	transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+	transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+  color: black;
+}
+
+.button{
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+    background-color: #b7b7b7;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+	border-radius:65px;
+}
+
+
+/*Contact------------------------------------------------------------------------------*/
+#Contact {
+  position: relative;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  height: 100%;
+  color: black;
+  text-align: center;
+}
+
+.contact-text{background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),  no-repeat top center fixed;background-size:cover;height:100%;width:100%;margin:0;}
+#contact{background:transparent;color:white; border-radius:25px;}
+#contact .section-title{color:#fff;margin-bottom:5px;font-size:50px;margin-top:0px;}
+#contact .section-title [class*=fa]{color:#8aaad9;-webkit-transform:rotate(-15deg);-moz-transform:rotate(-15deg);-ms-transform:rotate(-15deg);transform:rotate(-15deg);opacity:0.6;filter:alpha(opacity=60);}
+#contact .contact-info p,
+#contact .contact-info address{margin:0 0 30px;font-size:50px;line-height:30px;font-weight:400;}
+#contact-form .form-group label{display:none;font-size:18px;line-height:24px;font-weight:400;text-transform:uppercase;}
+#contact-form .form-control{background:#fff;background:rgba(255,255,255,0.9);border:none;border-radius:25px;outline:none;box-shadow:none;margin-bottom:30px;height:30px;font-size:30px;line-height:48px;font-weight:300;color:#637187;padding-left:64px;}
+#contact-form .form-group{position:relative;}
+#contact-form .form-group [class*="fa-"]{display:block;width:64px;position:absolute;top:0;left:5px;color:#637187;font-size:15px;line-height:30px;text-align:center;font-weight:300;}
+#contact-form.no-placeholder .form-group [class*="fa-"]{top:30px;}
+#contact-form textarea.form-control{height:auto;max-width:50%;min-width:50%;font-size:30px;line-height:22px;padding-top:14px;}
+#contact-form .form-control:focus{border:none;outline:none;box-shadow:none;}
+#contact-form .form-control::-webkit-input-placeholder{color:#637187;}
+#contact-form .form-control:-moz-placeholder{color:#637187;opacity:1;}
+#contact-form .form-control::-moz-placeholder{color:#637187;opacity:1;}
+#contact-form .form-control:-ms-input-placeholder{color:#637187;}
+
+
+
+
+/*AboutMe--------------------------------------------------------------------------*/
+#AboutMe{
+  background-color: #ccc;
+  color: white;
+  text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  
+div.ex3 {
+  background-color:black;
+  width: 60%;
+  float:right;
+  right:20%;
+  height: 65%;
+  overflow: auto;
+  position:relative;
+  padding-bottom: 10px;
+  border-radius:25px;
+}
+
+div.ex3 img{
+	border-radius:10px;
+}
+
+/*------------Projects----------------------*/
+#Projects{
+  background-color: black;
+  color: white;
+  text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    height: 100%;
+  }
+  
+div.gallery {
+  border: 1px solid #ccc;
+  height:200px;
+  margin-top:60px;
+}
+
+div.gallery:hover {
+  border: 5px solid #fa544b;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+.responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+.responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+

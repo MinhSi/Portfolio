@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nori Chien</title>
+<link type="text/CSS" rel="stylesheet" href="Nori.css">
+</head>
+
+<body>
+<header>
+<h1>Nori Chien Café Bar</h1>
+<div id="logo-bar">
+ <a href="Adopt.html"><img src="C:\Users\Minh DOng\Desktop\TWP 4.0\projects\Chien Cafe\3.jpg" alt= "logo" style="width:10%" style="height:10%"></a>
+</div>
+</div>
+</header>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="C:\Users\Minh DOng\Desktop\TWP 4.0\projects\Chien Cafe\t.jpg" style="width:100%" >
+  <div class="text">Chole</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="C:\Users\Minh DOng\Desktop\TWP 4.0\projects\Chien Cafe\f.png" style="width:100%" >
+  <div class="text">Bobby</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="C:\Users\Minh DOng\Desktop\TWP 4.0\projects\Chien Cafe\p.jpg" style="width:100%" >
+  <div class="text">Holly</div>
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 9000); // Change image every 9 seconds
+}
+</script>
+<div id="nav">
+  <ul>
+<li><a href="Nori.html">Home</a></li>
+<li><a href="about.html">About us</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="Adopt.html">Adopt</a></li>
+<li><a href="FAQ.html">FAQ</a></li>
+<li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+
+
+<div id="bio3">
+
+<h1><b>Who we are:<b><h1>
+  <img src="C:\Users\Minh DOng\Desktop\TWP 4.0\projects\Chien Cafe\HD.jpg" style="height:350px" style="width:350px">
+  <p>If you love dogs, Noir Chien Cafe Bar is about to become your new favorite joint. Play with pups as you grab your coffee fix, or catch up with friends over lattes, snuggling lap dogs. And if you fall in love with one? You’re in luck - all dogs are rescues looking for their forever homes.
+</p><br><p>
+ 
+
+Noir Chien Cafe Bar's mission is to revolutionize dog adoption by reinventing the way people connect with rescues who need homes. Noir Chien Cafe Bar offers a comfortable and fun space for humans and dogs to hang out with each other, away from overcrowded shelters, which can provoke fear and aggression in perfectly adoptable pups. In addition to helping worthy pups find homes, we also offer the opportunity for people unable to have pets of their own to spend quality time with furry friends (and vice versa) without the commitment of adoption.</p>
+  <br>
+
+</div>
+<br>
+<div id="footer">
+  <br><br>
+  <p>Copyright copy: Noir Chien Cafe Bar 2019.</p>
+  <p>All Rights Reserved.</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<title>Nooga Cafe</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width-device-width, initial-scale=1">
+<link rel="stylesheet" href="nooga.css">
+
+<body>
+
+<!--nav-->
+<div class="nav">
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#where">Where</a></li>
+</ul>
+</div>
+<!--end of nav-->
+
+<!--Header-->
+<header class="hi" id="home">
+	<div class="display-bottomleft">
+	<span class="O">Open from 6 AM to 10 PM</span>
+	</div>
+	<div class="text-middle">
+	<span class="texth" style="font-size:90px"> <b>Nooga <br> Cafe</b></span>
+	</div>
+	<div class="display-bottomright">
+	<span class="texth"> 1100 Market St, Chattanooga, TN 37402</span>
+	</div>
+</header>
+<!--end header-->
+
+<!--Background color and text for the whole page-->
+<div class="colorP">
+
+<!--About Container-->
+<div class="container" id="about">
+ <div class="content">
+	<h5 class="centerh5"> <span class="tag-wide"> ABOUT NOOGA CAFE</span></h5>
+		<p> Nooga Cafe was founded in Chattanooga by Minh Lee in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>
+		<p> Plus, we serce fresh made-to-order breakfeast and lunch, as well as a selection of sides and salads and other good stuff.</p>
+		<div class="leftbar">
+		<p><i>Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+		<p> Chef, Coffeeist and Owner: Lee</p>
+		</div>
+		<img src="/Users/Minh DOng/Desktop/TWP 4.0/projects/1/c.jpg" style="width:100%;max-width:1000px">
+		<p><strong>Opening Hours:</strong> everyday from 6 AM to 10 PM</p>
+		<p><strong> Address:</strong> 1100 Market St, Chattanooga, TN 37402</p>
+		</div>
+		</div>
+<!--end About Container-->
+
+<!-- Menu Container -->
+
+<div id="menu">
+<h5 class="centerh5"> <span class="tag-wide">THE MENU</span></h5>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'eat')">EAT</button>
+  <button class="tablinks" onclick="openCity(event, 'drink')">DRINK</button>
+</div>
+</div>
+
+<div id="eat" class="tabcontent">
+  	<h5>Bread Basket</h5>
+	<p class="text-gray"> Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+	<h5> Honey with Fruits</h5>
+	<p class="text-gray"> Vanilla flavored batter with malted flour 7.50</p><br>
+	
+	<h5>Belgian Waffle</h5>
+      <p class="text-gray">Vanilla flavored batter with malted flour 7.50</p><br>
+      <h5>Scrambled eggs</h5>
+      <p class="text-gray">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+      <h5>Blueberry Pancakes</h5>
+      <p class="text-gray">With syrup, butter and lots of berries 8.50</p>
+ 
+</div>
+
+<div id="drink" class="tabcontent">
+  <h5>Coffee</h5>
+      <p class="text-gray">Regular coffee 2.50</p><br>
+      <h5>Chocolato</h5>
+      <p class="text-gray">Chocolate espresso with milk 4.50</p><br>
+      <h5>Corretto</h5>
+      <p class="text-gray">Whiskey and coffee 5.00</p><br>
+      <h5>Iced tea</h5>
+      <p class="text-gray">Hot tea, except not hot 3.00</p><br>
+      <h5>Soda</h5>
+	  <p class="text-gray">Coke, Sprite, Fanta, etc. 2.50</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+	
+
+    <img src="/Users/Minh DOng/Desktop/TWP 4.0/projects/1/2.jpg" style="width:100%;max-width:1000px;margin-top:32px;margin-left:10%">
+<!--End Menu-->
+
+<!-- Contact-->
+<div class="container" id="where" style="padding-bottom;32px;";>
+<div class="content">
+<h5 class="centerh5"><span class="tag-wide">WHERE TO FIND US</span></h5>
+<p> Find us at some address at some place.</p>
+<img src="/Users/Minh DOng/Desktop/TWP 4.0/projects/1/map.jpg" style="width:100%;max-width:1000px;">
+<p><span class="tag-wide">FYI</span><br><br>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+ <p><strong>Reserve</strong> a table, ask for today's speacial or just send us a message:</p>
+ 
+ <form action=".php" target="_blank">
+ <p><input class="input" type="text" placeholder="Name" required name="name"></p>
+ <p><input class="input" type"number" placeholder="How many people" required name="people"></p>
+ <p><input class="input" type="day-time" placeholder="date and time" required name="date" value="2019-6"></p>
+ <p><input class="input" type="text" placeholder="message" required name="Message"><p>
+ <p><button class="button" type="submit"> SEND MESSAGE</button></p>
+ </form>
+ </div>
+ </div>
+ <!--End contact-->
+ 
+ <!--footer-->
+ <footer id="footer">
+ <p> Copyright: NOOGA CAFE 2019</p>
+ </footer>
+ <!--End footer-->
+ 
+ <script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+</body>
+</html>
+
+	
+	

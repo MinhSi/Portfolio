@@ -1,0 +1,320 @@
+*{
+box-sizing: border-box;} body {font-family: Verdana, sans-serif;} .mySlides {display: none} img{vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+#wrapper{
+padding-top: 80px;
+width:960px;
+margin:auto;
+}
+
+body{
+  background-color:#f4fef4;
+}
+
+header{
+background-color: White;
+color:#633D13;
+text-align: center;
+opacity: 0.6
+width:100%;
+height: 100%;
+margin: 0 0 10px 0;
+border-radius: 25px;
+}
+
+#logo-wrap {
+width: 125px;
+float: left;
+margin: 10px 0 0 50px;
+position: relative;
+}
+
+#logo-bar img{
+  border-radius: 25px;
+  width: 100%
+  height: 100%
+}
+
+#nav{
+  border-radius: 25px;
+overflow: hidden;
+background-color: pink;
+color:black;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+
+#nav a{
+  color:black;
+}
+
+#nav li{
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px
+ /*border-radius: 20 px;*/
+}
+
+#bio{
+  background: #29313d;
+  border-radius: 25px;
+  padding: 10px;
+  height: 100%;
+  margin-top: 10px;
+}
+
+#bio h1{
+  color:white;
+}
+
+#bio a{
+  color:white
+}
+
+#bio img{
+  margin-left: 30px;
+}
+
+#footer {
+  position: relative;
+  border-radius: 25px;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  height: 35%;
+  background-color:pink;
+  color: black;
+  text-align: center;
+}
+
+/*FAQ-------------------------------------------------------------------------------*/
+
+#bio2{
+  background: #29313d;
+  text-align: center;
+  color:none;
+  border-radius: 25px;
+  padding: 10px;
+  height: 100%;
+  margin-top: 10px;
+}
+
+#bio2 h1{
+  color: white;
+}
+
+#bio2 p{
+  font-size: 14px
+}
+
+.accordion {
+  background-color: white;
+  border-radius: 25px;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  width: 50%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: pink;
+}
+
+.panel {
+  border-radius: 25px;
+  padding: 0 18px;
+  font-size: 14px;
+  background-color: #633D13;
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 10px;
+  transition: max-height 0.2s ease-out;
+}
+
+/*About----------------------------------------------------------------*/
+
+#bio3{
+  background: #29313d;
+  text-align: left;
+  color: white;
+  border-radius: 25px;
+  padding: 10px;
+  height: 100%;
+  margin-top: 10px;
+}
+
+#bio3 img{
+  position: relative;
+  float: left;
+  margin-right: 10px;
+}
+
+#bio3 p{
+  font-size: 14px
+}
+
+/*menu-----------------------------------------------------*/
+
+#biom{
+  background: #29313d;
+  text-align: center;
+  color:none;
+  border-radius: 25px;
+  padding: 10px;
+  height: 1000pxsss;
+  margin-top: 10px;
+}
+
+#biom h1{
+  color: white;
+}
+
+#biom p{
+  font-size: 14px
+}
+
+.accordion {
+  background-color: white;
+  border-radius: 25px;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  width: 50%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: pink;
+}
+
+.panel {
+  border-radius: 25px;
+  padding: 0 18px;
+  font-size: 100%;
+  background-color: none;
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 10px;
+  transition: max-height 0.2s ease-out;
+}
+
+
+/*Adopt-------------------------------------------------------------------*/
+
+#bioa{
+  background: #29313d;
+  text-align: center;
+  color:white;
+  border-radius: 25px;
+  padding: 10px;
+  height: 1000pxsss;
+  margin-top: 10px;
+}
+
+
+/*Contact------------------------------------------------------------------------*/
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: pink;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: pink;
+}
+
+.container {
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
