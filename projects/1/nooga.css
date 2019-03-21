@@ -55,7 +55,7 @@ li a:hover:not(.active) {
 	
 #home{
 	background-img: url("./Portfolio/projects/1/1b.jpeg");
-	background-size: cover;\
+	background-size: cover;
 	background-position:center;
 	min-height:75%;
 	}
